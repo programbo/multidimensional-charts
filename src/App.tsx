@@ -1,13 +1,10 @@
-import MultidimensionalChart, {
-  MultidimensionalChartProps
-} from "./components/MultidimensionalChart";
 import { chartData as sample1 } from "../sample-data/sample1";
 import { chartData as sample2 } from "../sample-data/sample2";
 import { chartData as sample3 } from "../sample-data/sample3";
+import MultidimensionalChart from "./components/MultidimensionalChart";
 import { BarProps } from "./components/MultidimensionalChart/Bar";
 
 function App() {
-  const bars1 = sample1.bars as BarProps[];
   return (
     <div className="text-sky-900">
       <div className="container px-6 pt-10 pb-24 mx-auto">
@@ -16,7 +13,7 @@ function App() {
             className="pt-10"
             showLabels
             showValues
-            bars={sample1.bars as BarProps[]}
+            bars={sample2.bars as BarProps[]}
           />
           <MultidimensionalChart
             className="pt-10"
