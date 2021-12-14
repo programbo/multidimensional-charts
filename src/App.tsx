@@ -4,23 +4,32 @@ import MultidimensionalChart, {
 import { chartData as sample1 } from "../sample-data/sample1";
 import { chartData as sample2 } from "../sample-data/sample2";
 import { chartData as sample3 } from "../sample-data/sample3";
+import { BarProps } from "./components/MultidimensionalChart/Bar";
 
 function App() {
+  const bars1 = sample1.bars as BarProps[];
   return (
     <div className="text-sky-900">
       <div className="container px-6 pt-10 pb-24 mx-auto">
         <div className="flex flex-col w-full max-w-xl mx-auto divide-y space-y-14">
           <MultidimensionalChart
             className="pt-10"
-            {...(sample2 as MultidimensionalChartProps)}
+            showLabels
+            showValues
+            bars={sample1.bars as BarProps[]}
           />
           <MultidimensionalChart
             className="pt-10"
-            {...(sample3 as MultidimensionalChartProps)}
+            showLabels
+            showValues
+            bars={sample3.bars as BarProps[]}
           />
           <MultidimensionalChart
             className="pt-12"
-            {...(sample1 as MultidimensionalChartProps)}
+            showLabels
+            headings={sample1.headings}
+            legend={sample1.legend}
+            bars={sample1.bars as BarProps[]}
             caption={
               <table>
                 <thead>

@@ -6,8 +6,8 @@ import { Legend, LegendProps } from "./Legend";
 
 export interface MultidimensionalChartProps {
   className?: string;
-  showLabels: boolean;
-  showValues: boolean;
+  showLabels?: boolean;
+  showValues?: boolean;
   headings?: HeadingProps[];
   bars: BarProps[];
   caption?: ReactNode;
@@ -27,7 +27,8 @@ export default function MultidimensionalChart({
   headings,
   caption,
   legend,
-  bars
+  bars,
+  showLabels
 }: MultidimensionalChartProps) {
   const baseValue = getLongestBar(bars);
   const convertValueToPercentage = (value: number, base: number = baseValue) =>
@@ -50,11 +51,11 @@ export default function MultidimensionalChart({
             </header>
           )}
           <div className="relative z-10 mt-8 space-y-5 flex-flex-col sm:mt-5">
-            {bars?.map(({ key: barKey, label, showLabel, segments }) => (
+            {bars?.map(({ key: barKey, label, segments }) => (
               <Bar
                 key={barKey}
                 label={label}
-                showLabel={showLabel}
+                showLabel={showLabels}
                 segments={segments}
                 limit={baseValue}
               />

@@ -3,7 +3,7 @@ import { BarSegment, BarSegmentProps } from "./BarSegment";
 export interface BarProps {
   key: string;
   label: string;
-  showLabel: boolean;
+  showLabel?: boolean;
   segments: BarSegmentProps[];
   limit?: number;
 }
