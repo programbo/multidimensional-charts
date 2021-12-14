@@ -1,3 +1,3 @@
 # multidimensional-charts
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/multidimensional-charts)
+[Edit on CodeSandbox ⚡️](https://codesandbox.io/s/multidimensional-charts-rlwxv)
