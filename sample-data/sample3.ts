@@ -19,14 +19,14 @@ export const chartData: SampleChartData = {
       segments: [
         {
           key: "publicPatientA",
-          label: "19% of Public Patients",
+          label: "19% of Public Patients went to market",
           value: 19,
           showValue: true,
           color: "#CCECEF"
         },
         {
           key: "publicPatientB",
-          label: "81% of Public Patients",
+          label: "81% of Public Patients came home",
           value: 81,
           showValue: true,
           color: "#009FAE"
@@ -40,14 +40,14 @@ export const chartData: SampleChartData = {
       segments: [
         {
           key: "armidaleKelmscottMemorialHospital",
-          label: "27% of Private Patients",
+          label: "27% of Private Patients had roast beef",
           value: 27,
           showValue: true,
           color: "#CCECEF"
         },
         {
           key: "albanyHospital",
-          label: "30% of Private Patients",
+          label: "30% of Private Patients had none",
           value: 30,
           showValue: true,
           color: "#009FAE"

@@ -18,7 +18,7 @@ type SampleChartData = Omit<MultidimensionalChartProps, "bars"> & {
 
 export const chartData: SampleChartData = {
   showLabels: true,
-  showValues: true,
+  showValues: false,
   headings: [
     {
       label: "Medicare Benefits Schedule (MBS) fee",
@@ -76,7 +76,7 @@ export const barData: SampleBarProps[] = [
       },
       {
         key: "gapPaidByHBF",
-        label: "25% of Medical Gap paid by HBF",
+        label: "100% of Medical Gap paid by HBF",
         value: 25,
         color: legendData["gapPaidByHBF"].color,
         showValue: chartData.showValues
@@ -105,14 +105,14 @@ export const barData: SampleBarProps[] = [
       },
       {
         key: "gapPaidByHBF",
-        label: "12.5% of Medical Gap paid by HBF",
+        label: "50% of Medical Gap paid by HBF",
         value: 12.5,
         color: legendData["gapPaidByHBF"].color,
         showValue: chartData.showValues
       },
       {
         key: "youPay",
-        label: "You pay 12.5% of Medical Gap",
+        label: "You pay 50% of Medical Gap",
         value: 12.5,
         color: legendData["youPay"].color,
         showValue: chartData.showValues
@@ -141,7 +141,7 @@ export const barData: SampleBarProps[] = [
       },
       {
         key: "youPay",
-        label: "You pay 25% of Medical Gap",
+        label: "You pay 100% of Medical Gap",
         value: 25,
         color: legendData["youPay"].color,
         showValue: chartData.showValues
