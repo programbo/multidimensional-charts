@@ -49,8 +49,7 @@ export const barData: SampleBarProps[] = [
         key: "youPay",
         label: "Total medical cost",
         value: 125,
-        color: legendData["youPay"].color,
-        showValue: false
+        color: legendData["youPay"].color
       }
     ]
   },
@@ -64,22 +63,19 @@ export const barData: SampleBarProps[] = [
         key: "feePaidByMedicare",
         label: "75% of MBS fee paid by Medicare",
         value: 75,
-        color: legendData["feePaidByMedicare"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByMedicare"].color
       },
       {
         key: "feePaidByHBF",
         label: "25% of MBS fee paid by HBF",
         value: 25,
-        color: legendData["feePaidByHBF"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByHBF"].color
       },
       {
         key: "gapPaidByHBF",
         label: "100% of Medical Gap paid by HBF",
         value: 25,
-        color: legendData["gapPaidByHBF"].color,
-        showValue: chartData.showValues
+        color: legendData["gapPaidByHBF"].color
       }
     ]
   },
@@ -93,29 +89,25 @@ export const barData: SampleBarProps[] = [
         key: "feePaidByMedicare",
         label: "75% of MBS fee paid by Medicare",
         value: 75,
-        color: legendData["feePaidByMedicare"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByMedicare"].color
       },
       {
         key: "feePaidByHBF",
         label: "25% of MBS fee paid by HBF",
         value: 25,
-        color: legendData["feePaidByHBF"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByHBF"].color
       },
       {
         key: "gapPaidByHBF",
         label: "50% of Medical Gap paid by HBF",
         value: 12.5,
-        color: legendData["gapPaidByHBF"].color,
-        showValue: chartData.showValues
+        color: legendData["gapPaidByHBF"].color
       },
       {
         key: "youPay",
         label: "You pay 50% of Medical Gap",
         value: 12.5,
-        color: legendData["youPay"].color,
-        showValue: chartData.showValues
+        color: legendData["youPay"].color
       }
     ]
   },
@@ -129,22 +121,19 @@ export const barData: SampleBarProps[] = [
         key: "feePaidByMedicare",
         label: "75% of MBS fee paid by Medicare",
         value: 75,
-        color: legendData["feePaidByMedicare"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByMedicare"].color
       },
       {
         key: "feePaidByHBF",
         label: "25% of MBS fee paid by HBF",
         value: 25,
-        color: legendData["feePaidByHBF"].color,
-        showValue: chartData.showValues
+        color: legendData["feePaidByHBF"].color
       },
       {
         key: "youPay",
         label: "You pay 100% of Medical Gap",
         value: 25,
-        color: legendData["youPay"].color,
-        showValue: chartData.showValues
+        color: legendData["youPay"].color
       }
     ]
   }

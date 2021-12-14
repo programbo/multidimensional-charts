@@ -12,11 +12,11 @@ export interface BarSegmentProps {
 }
 
 export const BarSegment: React.FC<BarSegmentProps> = ({
-  label: segmentLabel,
+  label,
   value,
   size,
-  color,
   showValue,
+  color,
   first,
   last
 }) => {
@@ -33,7 +33,7 @@ export const BarSegment: React.FC<BarSegmentProps> = ({
         "rounded-l-full": first,
         "rounded-r-full": last
       })}
-      title={segmentLabel}
+      title={label}
       style={{ width: `${size}%`, backgroundColor: color }}
     >
       {showValue && (
